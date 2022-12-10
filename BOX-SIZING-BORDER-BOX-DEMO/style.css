@@ -16,6 +16,16 @@ h2 {
   margin: auto;
 }
 
+.bb-cont {
+  color: rgb(0, 27, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .general {
   width: 500px;
   background: lightgoldenrodyellow;

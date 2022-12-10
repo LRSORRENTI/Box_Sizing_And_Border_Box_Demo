@@ -30,17 +30,21 @@
     <div class="outer-container">
       <p class="general">By default box-sizing</p>
     </div>
-    <div class="content-box">content</div>
-    <div class="scale">scale</div>
-    <div class="border-box">border-box</div>
+    <div class="bb-cont">
+      <div class="content-box">content</div>
+      <div class="scale">scale</div>
+      <div class="border-box">border-box</div>
+    </div>
     <div class="outer-container">
       <p class="general">
         Let's now duplicate the above, but this time add 25px to content-box div
       </p>
     </div>
-    <div class="content-box2">content</div>
-    <div class="scale2">scale</div>
-    <div class="border-box2">border-box</div>
+    <div class="bb-cont">
+      <div class="content-box2">content</div>
+      <div class="scale2">scale</div>
+      <div class="border-box2">border-box</div>
+    </div>
     <div class="outer-container">
       <p class="general">
         Now our content-box div is +25 pixels on all four sides, and it's right
@@ -52,9 +56,11 @@
         Now let's add box-sizing: border-box to our border-box div above
       </p>
     </div>
-    <div class="content-box3">content</div>
-    <div class="scale3">scale</div>
-    <div class="border-box3">border-box</div>
+    <div class="bb-cont">
+      <div class="content-box3">content</div>
+      <div class="scale3">scale</div>
+      <div class="border-box3">border-box</div>
+    </div>
     <div class="outer-container">
       <p class="general">
         So by using border-box, we include the padding and the border together,
