@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../BOX-SIZING-BORDER-BOX-DEMO/style.css" />
+    <title>Quick Demo of why border-box is goated</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <h1 class="general">
+        This will be a demonstration and example of why box-sizing: border-box
+        is the GOAT of CSS, ok maybe not the goat but top 10 CSS properties for
+        sure
+      </h1>
+    </div>
+    <div class="outer-container">
+      <h2>
+        <u><b>INTRO</b></u>
+      </h2>
+    </div>
+    <div class="outer-container">
+      <p class="general">
+        To understand box-sizing we need to understand the box model, aka
+        everything is a box, or box inside of a box, boxes in boxes in more
+        boxes.. like a nesting doll; only more finicky and Angular ;)
+      </p>
+    </div>
+    <div class="outer-container">
+      <p class="general">By default box-sizing</p>
+    </div>
+    <div class="content-box">content</div>
+    <div class="scale">scale</div>
+    <div class="border-box">border-box</div>
+    <p>
+      Let's now duplicate the above, but this time add 25px to content-box div
+    </p>
+    <div class="content-box2">content</div>
+    <div class="scale2">scale</div>
+    <div class="border-box2">border-box</div>
+    <p>
+      Now our content-box div is +25 pixels on all four sides, and it's right
+      side is sticking way out there, and this is the default behaviour
+    </p>
+    <p>Now let's add box-sizing: border-box to our border-box div above</p>
+    <div class="content-box3">content</div>
+    <div class="scale3">scale</div>
+    <div class="border-box3">border-box</div>
+    <p>
+      So by using border-box, we include the padding and the border together, it
+      makes things easier when styling, it will automatically do the math for
+      you, it generally makes things much more predictable
+    </p>
+    <p>
+      <b>
+        Setting a width or height with border-box makes it so that padding and
+        border are AUTO set up for you
+      </b>
+    </p>
+    <div class="border-box4">
+      <p class="critical">ALSO REMEMBER TO ADD:</p>
+      <p class="critical">*, *::before, *::after { box-sizing: border-box; }</p>
+      <p id="critical">
+        This is critically important because the universal selector by itself
+        '*' <b>WILL NOT</b> select pseudo-elements, so rmemeber to add the above
+        at the top of your CSS file
+      </p>
+    </div>
+    <div class="border-box5">
+      <p class="critical">
+        Alternatively you could, and may often see this in other people's code,
+        we can do this to achieve the same effect:
+      </p>
+      <p class="critical">*, *::before, *::after{box-sizing: inherit}</p>
+      <p class="critical">html{ box-sizing: border-box; }</p>
+      <p class="critical">
+        When we use inherit with '*' and the before & after pseudo-selectors it
+        can prevent some headaches when working with others code, (or my own
+        code lol let's be real here)
+      </p>
+    </div>
+  </body>
+</html>
