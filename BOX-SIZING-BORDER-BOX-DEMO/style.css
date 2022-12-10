@@ -16,17 +16,45 @@ h2 {
   margin: auto;
 }
 
+.bb-cont {
+  color: rgb(0, 27, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .general {
   width: 500px;
   background: lightgoldenrodyellow;
   box-sizing: border-box;
   padding: 25px;
   border: 5px solid navy;
-  font-weight: 1000;
+  font-weight: 900;
   font-size: 20px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
+  color: #1a6a71e1;
+}
+.general2 {
+  width: 500px;
+  background: lightgoldenrodyellow;
+  box-sizing: border-box;
+  padding: 25px;
+  border: 5px solid navy;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  color: #1a6a71e1;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
 }
 
 .scale {
